@@ -14,7 +14,6 @@ then
 fi
 
 n_match_lines=`grep --binary-files text -r ${searchstr} ${filesdir} | wc -l`
-
 n_match_files=`grep --binary-files text -l -r ${searchstr} ${filesdir} | sort | uniq | wc -l`
 
 echo "The number of files are ${n_match_files} and the number of matching lines are ${n_match_lines}"
